@@ -104,6 +104,9 @@ return a;
 (a)*(b))
 
 #define __check_type_compatible(type_a, type_b) static_assert(__builtin_types_compatible_p(type_a, type_b), __STRING(type_a) " is not compatible with " __STRING(type_b));
+
+extern uint __get_current_exception(void);
+
 #ifdef __cplusplus
 }
 #endif
